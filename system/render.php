@@ -2,10 +2,14 @@
 {
     public static function render($filePath, $data = array())
     {
-        echo "renderform";
+        // echo "renderform";
+        // dump($data);
+        // exit;
 
-        extract($data);
+
+        // extract($data);
         ob_start();
+        // ($data[0]);
         require_once("mvc/view/" . $filePath);
         $out = ob_get_clean();
         require_once('theme/default.php');

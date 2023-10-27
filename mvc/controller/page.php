@@ -1,7 +1,7 @@
 <?
 class PageController
 {
-    function home()
+    function home($page)
     {
         // if (!isset($_SESSION['uname'])) {
         //     // Render::render('user/login', array());
@@ -13,7 +13,9 @@ class PageController
         // } else {
         //     $data['records']  = null;
         // }
-        Render::render('page/home.php');
+        $records = QuranModel::selectAyaPage($page);
+        $data['records'] = $records;
+        Render::render('page/home.php', $records);
         // }
     }
 }

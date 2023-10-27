@@ -1,9 +1,9 @@
-.textdiv {
+/* .textdiv {
     background-color: lightgray;
     width: 400px;
     height: 400px;
     margin-left: 350px;
-}
+} */
 
 .inpsearch {
     /* margin-left: 100px; */
@@ -14,7 +14,7 @@
     border: 1px solid;
 } */
 
-th,
+/* th,
 td {
     border: 1px solid;
     padding: 5px 10px;
@@ -25,4 +25,18 @@ table {
     border-collapse: collapse;
     direction: rtl;
     margin: 20px auto;
+} */
+
+div.main {
+    width: 600px;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 700px;
+    margin: 0 auto;
+    text-align: justify;
+    direction: rtl;
+    padding: 10px;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'b zar';
 }

@@ -33,7 +33,7 @@ function getRequestUri()
 
 function getBaseUrl()
 {
-    return "/notes2-uncox-withMVC/";
+    return "/quran/";
 }
 
 function strHas($str, $srch, $caseSensitive = false)

@@ -1,8 +1,8 @@
 <? class Render
 {
-    public static function render($filePath, $data=array())
+    public static function render($filePath, $data = array())
     {
-        echo "<br>renderform";
+        echo "renderform";
 
         extract($data);
         ob_start();

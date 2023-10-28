@@ -15,7 +15,7 @@ $params = array();
 for ($i = 3; $i < count($parts); $i++) {
     $params[] = $parts[$i];
 }
-
+// $params[0] = ($params[0] == null) ? 1 : $params[0];
 
 $controllerClassname = ucfirst($controller) . "Controller";
 $controllerInstance = new  $controllerClassname();

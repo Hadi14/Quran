@@ -36,7 +36,12 @@ div.main {
     text-align: justify;
     direction: rtl;
     padding: 10px;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 40px;
+    font-family: 'Arabic Typesetting';
+}
+
+.ayeNum {
     font-family: 'b zar';
+    font-size: 30px;
 }

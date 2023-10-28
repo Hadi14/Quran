@@ -3,11 +3,17 @@ class QuranModel
 {
     public static function selectAyaPage($page)
     {
-        $db = Db::getInstance();
         // dump($page);
         // exit;
 
-        $records = $db->query("select * from quran where page=$page[0] ");
+        $db = Db::getInstance();
+        $p = (!array_key_exists(0, $page)) ? 1 : $page[0];
+        // dump($page[0]);
+        // dump($p);
+
+        // exit;
+
+        $records = $db->query("select * from quran where page=$p ");
         return $records;
     }
 }

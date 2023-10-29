@@ -41,18 +41,14 @@ div.main {
     font-family: 'Arabic Typesetting';
 }
 
-/* .ayeNum {
-    font-family: 'b zar';
-    font-size: 30px;
+.ayeNum {
+    font-family: 'b nazanin';
+    font-size: 25px;
 }
- */
-.red {
-    color: red;
+.ayesign{
+    font-size: 25px;
 }
 
-.colored {
-    color: #ff8000;
-}
 
 .center {
     text-align: center;

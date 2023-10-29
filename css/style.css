@@ -50,6 +50,9 @@ div.main {
     font-size: 25px;
 }
 
+.redcolor {
+    color: red;
+}
 
 .center {
     text-align: center;

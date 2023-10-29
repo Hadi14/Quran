@@ -53,3 +53,7 @@ div.main {
 .colored {
     color: #ff8000;
 }
+
+.center {
+    text-align: center;
+}

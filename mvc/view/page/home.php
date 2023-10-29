@@ -10,15 +10,11 @@
 </div>
 
 <script>
-    // n = $('span').text().replace(/(بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ)/g, "<div class='center'>$1 </div>");
-    n = $('span').innerHTML().replace(/(بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ)/g, '<div class="center">$1 </div>');
-
-    console.log(n);
-    // n = n.replace(/(﴿)/g, "<span>﴿</span>");
-    // n = n.replace(/[1-9]|[1-)/g, "<span>﴿</span>");
-    // n = n.replace(/(﴾ )/g, "<span>﴾ </span>");
-
-
-    document.getElementById("divmain").innerHTML = n;
-    // document.getElementById("divmain").html = n;
+    $(document).ready(function() {
+        n = $('span').text().replace(/(بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ)/g, "<div class='center'>$1 </div>"); // این میتونه بهینه بشه که سه خط زیر نوشته نشه
+        n = n.replace(/(﴿)/g, "<span class='ayesign'>﴿</span>");
+        n = n.replace(/([1-9]|[1-9][0-9][0-9]|[1-2][0-8][0-6])/g, "<span class='ayeNum'>$1</span>");
+        n = n.replace(/(﴾ )/g, "<span class='ayesign'>﴾ </span>");
+        document.getElementById("divmain").innerHTML = n;
+    });
 </script>

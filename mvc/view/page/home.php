@@ -10,9 +10,15 @@
 </div>
 
 <script>
-    n = $('span').innerHTML().replace(/(بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ)/g, `<div class="center">$1 </div>`);
+    // n = $('span').text().replace(/(بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ)/g, "<div class='center'>$1 </div>");
+    n = $('span').innerHTML().replace(/(بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ)/g, '<div class="center">$1 </div>');
+
+    console.log(n);
     // n = n.replace(/(﴿)/g, "<span>﴿</span>");
     // n = n.replace(/[1-9]|[1-)/g, "<span>﴿</span>");
     // n = n.replace(/(﴾ )/g, "<span>﴾ </span>");
+
+
     document.getElementById("divmain").innerHTML = n;
+    // document.getElementById("divmain").html = n;
 </script>

@@ -57,7 +57,8 @@ div.main {
 
 .redcolor {
     color: red;
-    font-size: 39px; /* برای اینکه در کروم هم به رنگ قرمز نمایش دهد*/
+    font-size: 39px;
+    /* برای اینکه در کروم هم به رنگ قرمز نمایش دهد*/
 }
 
 .center {

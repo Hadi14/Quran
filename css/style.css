@@ -5,6 +5,11 @@
     margin-left: 350px;
 } */
 
+@font-face {
+    font-family: farArabic;
+    src: url("../fonts/Far_Arabics.ttf");
+}
+
 .inpsearch {
     /* margin-left: 100px; */
 }
@@ -42,7 +47,7 @@ div.main {
 }
 
 .ayeNum {
-    font-family: 'Far.Arabic Style', 'b nazanin';
+    font-family: farArabic, 'b nazanin';
     font-size: 25px;
 }
 

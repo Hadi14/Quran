@@ -13,6 +13,7 @@
 
 <script>
     $(document).ready(function() {
+        let n = $('span').text().replace(/(بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ)/g, "<div class='center'>$1 </div>"); //++ این میتونه بهینه بشه که سه خط زیر نوشته نشه
         // u0652 --> علامت سکون
         // u0646 --> نون ساکن
 
@@ -25,18 +26,21 @@
         // u064B --> ً  اَن
 
         // u 0651 --> تشدید
-        let n = $('span').text().replace(/(بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ)/g, "<div class='center'>$1 </div>"); //++ این میتونه بهینه بشه که سه خط زیر نوشته نشه
+
         // n = n.replace(/(\u064D)/g, "<span class='redcolor'>$1</span>"); // تنوین   ٍ
         // n = n.replace(/(\u0646)/g, "<span class='redcolor'>$1</span>"); //حرف ن
         n = n.replace(/(﴿)/g, "<span class='ayesign'>﴿</span>");
         n = n.replace(/([0-9])/g, "<span class='ayeNum'>$1</span>");
         n = n.replace(/(﴾ )/g, "<span class='ayesign'>﴾ </span>");
 
-        n = n.replace(/(\u064B|\u064C|\u064D|\u0646\u0652)(\s\u0646)/g, "<span class='redcolor'>$1$2</span>");
-        // n = n.replace(/(\u0646\u0652)(\s\u0646)/g, "<span class='redcolor'>$1$2</span>");
+        // n = n.replace(/(\u0646\u0652\s[\u064A\u0631\u0645\u0644\u0648\u0646])/g, "<span class='redcolor'>$1</span>"); // نون ساکن به حروف یرملون در اول کلمه دوم
+        n = n.replace(/(\u064B\u0652\s[\u064A\u0631\u0645\u0644\u0648\u0646])/g, "<span class='redcolor'>$1</span>"); // نون ساکن به حروف یرملون در اول کلمه دوم
+        // n = n.replace(/(\u0646\u0652\s[\u064A\u0631\u0645\u0644\u0648\u0646])|(\u064D\u0652\s[\u064A\u0631\u0645\u0644\u0648\u0646])|(\u064D\u0652\s[\u064C\u0631\u0645\u0644\u0648\u0646])|(\u064B\u0652\s[\u064C\u0631\u0645\u0644\u0648\u0646])/g, "<span class='redcolor'>$1$2$3$4</span>"); // !!!! فقط اولی رو مچ میکنه
 
 
         document.getElementById("divmain").innerHTML = n;
+
+        console.log(toUnicode("ukh"));
 
 
     });

@@ -18,4 +18,12 @@ class PageController
         Render::render('page/home.php', $records);
         // }
     }
+    function all($page)
+    {
+
+        $records = QuranModel::selectAllAya();
+        $data['records'] = $records;
+        Render::render('page/all.php', $records);
+        // }
+    }
 }

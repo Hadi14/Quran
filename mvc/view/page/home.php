@@ -30,6 +30,12 @@
         // u0644 -->  ل
         // u0648 -->  و
         // u0646 -->  ن
+
+
+        // u0622 -->  آ یا ء
+
+
+
         n = n.replace(/(﴿)/g, "<span class='ayesign'>﴿</span>");
         n = n.replace(/([0-9])/g, "<span class='ayeNum'>$1</span>");
         n = n.replace(/(﴾ )/g, "<span class='ayesign'>﴾ </span>");
@@ -39,9 +45,13 @@
         // سوم اینکه حروف رنگی شده در فایرفاکس جدا نمایش داده میشه
 
 
+        n = n.replace(/(\u0646\u0652[\u0622\u0647])/g, "<span class='redcolor'>$1</span>"); // !!!! تجوید: نون ساکن   - اظهار - در کروم درسته ولی در فایرفاکس جدا نشون میده
+
+
         document.getElementById("divmain").innerHTML = n;
 
-        console.log(toUnicode("ukh"));
+
+
 
 
     });

@@ -39,6 +39,7 @@
         // دوم اینکه اگر حرف آخر کلمه اول الف ناخوانا بود آن را مچ نمیکنه
         // سوم اینکه حروف رنگی شده در فایرفاکس جدا نمایش داده میشه
 
+      
         document.getElementById("divmain").innerHTML = n;
 
         console.log(toUnicode("ukh"));

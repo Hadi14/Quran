@@ -29,7 +29,7 @@
 
         /*میم ساکنه*/ // u0645 --> م      
 
-        // u062A --> ت
+        // u062A --> ت  //u062B --> ث
 
         n = n.replace(/(﴿)/g, "<span class='ayesign'>﴿</span>");
         n = n.replace(/([0-9])/g, "<span class='ayeNum'>$1</span>");
@@ -55,6 +55,7 @@
         // n = n.replace(/(\s\u0627\u0628\u0652\u0646[\u064E\u0650\u064F]\s)/g, "<span class='redcolor'>$1</span>"); //تجوید:  همزه قطع - بخش اسم- کلمه ابن
         // n = n.replace(/(\s\u0627\u0628\u0652\u0646\u064E\u062A)/g, "<span class='redcolor'>$1</span>"); //تجوید:  همزه قطع - بخش اسم- کلمه ابنت
         // n = n.replace(/(\s\u0627\u0645\u0652\u0631\u064E[\u0622\u0623])/g, "<span class='redcolor'>$1</span>"); //تجوید:  همزه قطع - بخش اسم- کلمه امرء
+        n = n.replace(/(\s\u0627\u062B\u0652\u0646\u064E(\u064A\u0652)|()\s)/g, "<span class='redcolor'>$1</span>"); //تجوید:  همزه قطع - بخش اسم- مصدرهای اثنی
 
 
 

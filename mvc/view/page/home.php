@@ -67,7 +67,8 @@
         // n = n.replace(/(\s\u0627\u0645\u0652\u0631\u064E[\u0622\u0623])/g, "<span class='redcolor'>$1</span>"); //تجوید:  همزه قطع - بخش اسم- کلمه امرء
         // n = n.replace(/(\s\u0627\u062B\u0652\u0646\u064E((\u064A\u0652)|(\u0627)|(\u062A\u064E\u0627)|(\u064A\u0652\u0646\u0650)|(\u0627\u0646\u0650)|(\u062A\u064E\u064A\u0652\u0646\u0650))\s)/g, "<span class='redcolor'>$1</span>"); //تجوید:  همزه قطع - بخش اسم- مصدرهای اثنی
         // n = n.replace(/(\s(\u0648\u064E)*\u0623\u064E\u0646\u064E\u0627\s)/g, "<span class='redcolor'>$1</span>"); //تجوید:  وقف   - ابدال تنوین آخر
-        n = n.replace(/([\u06D6\u06D7\u06D8\u06D9\u06DA\u06DB])/g, "<span class='redcolor'>$1</span>"); //علائم وقف:  
+        // n = n.replace(/([\u06D6\u06D7\u06D8\u06D9\u06DA\u06DB])/g, "<span class='redcolor'>$1</span>"); //علائم وقف:  
+        n = n.replace(/(\u064E\u0627)/g, "<span class='redcolor'>$1</span>"); //الف مدی:  
 
 
 
